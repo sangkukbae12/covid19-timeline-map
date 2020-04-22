@@ -1,5 +1,5 @@
 ### Covid19 Timeline Map
-> 코로나19 바이러스의 발생 시점부터 전세계로 확산되는 과정을 월드맵으로 표현했습니다. 
+> 코로나19 바이러스의 발생 시점부터 전세계로 확산되는 과정을 월드맵으로 볼 수 있습니다.
 
 **데모**: [https://objective-galileo-3bac0e.netlify.app/](https://objective-galileo-3bac0e.netlify.app/)
 
@@ -25,4 +25,7 @@ npm install
 ```bash
 npm start
 ```
+
+## 데이터 출처
+[https://covid.ourworldindata.org/data/ecdc/total_cases.csv](https://covid.ourworldindata.org/data/ecdc/total_cases.csv)
 
