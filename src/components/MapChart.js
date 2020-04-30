@@ -9,6 +9,7 @@ import {
 } from 'react-simple-maps';
 import * as d3 from 'd3';
 import theme from '../theme';
+import CountryISO from '../data/CountryNameISO.csv';
 
 const geoUrl =
   'https://raw.githubusercontent.com/zcreativelabs/react-simple-maps/master/topojson-maps/world-110m.json';
@@ -36,9 +37,7 @@ const WorldMap = ({ data, date, setTooltipContent }) => {
 
   useEffect(() => {
     async function getCountryName() {
-      const data = await d3.csv(
-        'https://gist.githubusercontent.com/sangkukbae/58e69ada4613feefd214f899339475e9/raw/CountryNameISO.csv'
-      );
+      const data = await d3.csv(CountryISO);
       const countryISOA3 = data.reduce((acc, cur) => {
         if (cur.ISO_A3 !== undefined) {
           acc[cur.ISO_A3] = cur.Country;
